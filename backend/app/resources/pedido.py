@@ -1,7 +1,7 @@
 from flask_restful import Resource
 
-class Clientes(Resource):
+class Pedido(Resource):
     def get(self):
-        return "Clientes API"
+        return "Pedidos API"
     def post(self):
         pass

@@ -21,10 +21,10 @@ def create_app(test_config=None):
     config_ma(app)
     Migrate(app, app.db)
 
-    from .resources import cliente, pedido
+    from .resources import clientes, pedidos
     api.init_app(app)
-    api.add_resource(cliente.Cliente, '/cliente/')
-    api.add_resource(pedido.Pedido, '/pedido/')
+    api.add_resource(clientes.Clientes, '/clientes/')
+    api.add_resource(pedidos.Pedidos, '/pedidos/')
     app.register_blueprint(api_bp)
 
 

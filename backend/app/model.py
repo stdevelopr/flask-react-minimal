@@ -7,7 +7,9 @@ def configure(app):
     app.db = db
 
 
-class Clientes(db.Model):
-    __tablename__ = 'clientes'
+class Cliente(db.Model):
+    __tablename__ = 'cliente'
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(255))
+    primeiro_nome = db.Column(db.String(255))
+    ultimo_nome = db.Column(db.String(255))
+    email = db.Column(db.String(255))

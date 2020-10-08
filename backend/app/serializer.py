@@ -1,5 +1,5 @@
 from flask_marshmallow import Marshmallow
-from .model import Clientes
+from .model import Cliente
 
 ma = Marshmallow()
 
@@ -9,5 +9,5 @@ def configure(app):
 
 class ClienteSchema(ma.Schema):
     class Meta:
-        model = Clientes
-        fields = ('first_name',)
+        model = Cliente
+        fields = ('primeiro_nome', 'ultimo_nome', 'email')

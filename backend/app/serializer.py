@@ -10,4 +10,4 @@ def configure(app):
 class ClienteSchema(ma.Schema):
     class Meta:
         model = Cliente
-        fields = ('primeiro_nome', 'ultimo_nome', 'email')
+        fields = ('id','primeiro_nome', 'ultimo_nome', 'email')

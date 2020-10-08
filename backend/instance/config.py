@@ -1,1 +1,1 @@
-DB_URI= "TESTTTTT"
+DB_URI= "Private variable"

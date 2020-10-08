@@ -3,14 +3,15 @@ Run your Flask backend application and edit your React frontend.
 ### Instructions
 
 clone this repo:\
-  `git clone`
+ `git clone`
 
 enter the folder:\
-  `cd Flask-React`
+ `cd Flask-React`
 
-Now you have to install the requirements for the backend and frontend and run them in separeted environments. Webpack will stick them together. 
+Now you have to install the requirements for the backend and frontend and run them in separeted environments. Webpack will stick them together.
 
 #### Backend
+
 For the backend enter the backend folder\
 `cd backend`\
 create a virtual environment:\
@@ -26,6 +27,7 @@ Open your browser:
 http://127.0.0.1:5000/
 
 #### Frontend
+
 Now open another tab, enter de frontend folder:\
 `cd ../frontend`\
 install the requirements:
@@ -36,3 +38,7 @@ This command will run webpack and generate static files for your production back
 You can also run `npm run dev` while in development mode.\
 Running:\
 `npm run watch` you cand edit your frontend and have the files automatically updated in the backend. Just refresh your browser \*\* make sure that there is no cached files. Try a hard refresh.
+
+## Using Docker
+
+`docker-compose up`
